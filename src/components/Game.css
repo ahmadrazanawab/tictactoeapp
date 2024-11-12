@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.reset-btn{
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.text-winner{
+    font-size: 2rem;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+    background-color: #ddd;
+}
+.squares{
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    font-weight: 800;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+@media (max-width: 450px){
+    .text-winner{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 360px){
+    .game{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .reset-btn{
+        margin-top: 10px;
+        padding: 2px 5px 2px 5px;
+        font-size: 1.1rem;
+        border-radius: 3px;
+    }
+    .board{
+        grid-template-columns: repeat(3,80px);
+        grid-gap: 3px;
+        margin-top: 10px;
+    }
+    .squares{
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+}
+
+@media (max-width: 270px){
+    .reset-btn{
+        font-size: 1rem;
+    }
+    .text-winner{
+        font-size: 0.8rem;
+    }
+    .board{
+        grid-template-columns: repeat(3,60px);
+        grid-gap: 2px;
+    }
+    .squares{
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+}
+
